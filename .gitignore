@@ -85,7 +85,10 @@ php_errors.log
 # Composer
 #-------------------------
 vendor/
-
+/vendor/
+/node_modules/
+/writable/*
+.env
 #-------------------------
 # IDE / Development Files
 #-------------------------
