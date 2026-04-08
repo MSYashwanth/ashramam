@@ -1,0 +1,202 @@
+
+/* Brand Colors */
+:root {
+    --brand-orange: #D35400; /* Matching your logo */
+}
+
+/* Fix for Dropdown stacking */
+.sticky-top {
+    z-index: 1020 !important;
+}
+
+.dropdown-menu {
+    z-index: 1070 !important; /* Ensure this is the highest element */
+    margin-top: 10px; /* Small gap for elegance */
+}
+
+/* Hover effects using your brand color */
+.navbar-nav .nav-link:hover {
+    color: var(--brand-orange) !important;
+}
+
+.input-group .form-control:focus {
+    border-color: var(--brand-orange);
+    box-shadow: 0 0 0 0.25rem rgba(211, 84, 0, 0.25);
+}
+
+:root {
+    --brand-saffron: #D35400;
+}
+
+/* 1. The Container Fix */
+.search-vault-wrapper {
+    position: relative;
+    border-bottom: 2px solid #e0e0e0;
+    height: 45px; /* Fixed height ensures icons stay centered */
+    transition: all 0.3s ease;
+}
+
+/* 2. The Icon Fix */
+.search-icon-left {
+    padding-left: 5px;
+    color: #999;
+    font-size: 1rem;
+    line-height: 1; /* Prevents vertical offset */
+}
+
+/* 3. The Input Fix */
+.vault-input {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    height: 100%; /* Fill container height */
+    padding: 0 10px !important;
+    font-size: 1rem;
+}
+
+/* 4. The Buttons Alignment */
+.btn-search-minimal, .btn-reset-hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-saffron);
+    font-size: 0.85rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.btn-reset-hidden {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+/* Focus state */
+.search-vault-wrapper:focus-within {
+    border-bottom: 2px solid var(--brand-saffron);
+}
+/* Customizing the logo height for mobile */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+}
+
+/* Footer */
+
+
+:root {
+    --footer-bg: #1a1a1a;
+    --brand-saffron: #D35400;
+}
+
+.super-footer {
+    background-color: var(--footer-bg);
+    color: #ffffff;
+    border-top: 4px solid var(--brand-saffron);
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1); /* Optional: makes logo white if needed */
+}
+
+.footer-heading {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Accent line under headings */
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--brand-saffron);
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--brand-saffron);
+    padding-left: 5px;
+}
+
+/* Social Icons */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: var(--brand-saffron);
+    transform: translateY(-3px);
+}
+
+/* Newsletter Input focus */
+.super-footer .form-control:focus {
+    border-color: var(--brand-saffron) !important;
+}
+
+/* Copyright Bar */
+.copyright-bar {
+    background-color: #111;
+    border-top: 1px solid #333;
+}
+
+/* Book listing home page */
+/* Ensure the body never scrolls sideways */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.home-banner {
+    /* Reference your image correctly */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/home_banner.png') no-repeat center center;
+    background-size: cover;
+    min-height: 450px;
+    /* Removed margins to stop overflow */
+    border-radius: 0; /* Banners look better full-width, or use 15px if inside a container */
+}
+
+/* Added a slight text shadow to make text pop against the background image */
+.banner-content h1, .banner-content p {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.btn-brand-saffron {
+    background-color: #D35400!important;
+    color: white!important;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-brand-saffron:hover {
+    background-color: #b34700;
+    color: white!important;
+    transform: translateY(-2px);
+}
+
